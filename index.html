@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-content">
+            <header>
+                <h1>To-do List</h1>
+                <button class="todo-add" type="button" id="todo-add">+</button>
+            </header>
+            <section id="todo-list" class="todo-list"></section>
+
+            <!--Janela modal-->
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <span id="closeModal" class="modalClose">&times;</span>
+
+                    <!--Formulario de tarefa-->
+                    <form>
+                        <label class="formModal" for="titleTodo">TItulo da Tarefa:</label>
+                        <br>
+                        <input type="text" id="titleTodo" required><br>
+                        
+                        <label class="formModal" for="descriptioTodo">Descrição:</label>
+                        <br>
+                        <textarea name="description" id="descriptioTodo" cols="35" rows="10"></textarea><br>
+                        <!-- <label class="formModal">Data:</label><br><input type="date" name="dataConclusão" id="dataConclusão" required> -->
+
+                        <button class="sendData" id="send-data">Enviar</button>
+                    </form>
+                </div>
+            </div
+        </div>
+    </div>
+    <script src="./script/script_modal.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+</html>
